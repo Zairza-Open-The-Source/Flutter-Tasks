@@ -43,20 +43,171 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
+      body:Padding(
+            padding:
+                const EdgeInsets.only(top: 50, left: 20, right: 20, bottom: 15),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 64,
+                      width: 360,
+                      decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8 ),
+                                border: Border.all(color: Colors.black)
+                                ),
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: 12,
+                              ),
+                              Text('12:20:',
+                              style: TextStyle(
+                                color: Colors.blue,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18
+                              ),),
+                              Text('  Go to college',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18
+                              ),)
+                            ],
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: 12,
+                              ),
+                              Text('12 march',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 14
+                              ),),
+                              
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 16,),
+                    Container(
+                      height: 64,
+                      width: 360,
+                      decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8 ),
+                                border: Border.all(color: Colors.black)
+                                ),
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: 12,
+                              ),
+                              Text('12:20:',
+                              style: TextStyle(
+                                color: Colors.blue,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18
+                              ),),
+                              Text('  Go to college',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18
+                              ),)
+                            ],
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: 12,
+                              ),
+                              Text('12 march',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 14
+                              ),),
+                              
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                     SizedBox(height: 16,),
+                    Container(
+                      height: 64,
+                      width: 360,
+                      decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8 ),
+                                border: Border.all(color: Colors.black)
+                                ),
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: 12,
+                              ),
+                              Text('12:20:',
+                              style: TextStyle(
+                                color: Colors.blue,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18
+                              ),),
+                              Text('  Go to college',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18
+                              ),)
+                            ],
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: 12,
+                              ),
+                              Text('12 march',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 14
+                              ),),
+                              
+                            ],
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+                ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
